@@ -1,0 +1,31 @@
+fetch("https://www.temu.com/us-zh-Hans/api/poppy/v1/opt?scene=opt&is_back=1", {
+  "headers": {
+    "accept": "application/json, text/plain, */*",
+    "accept-language": "zh-CN,zh;q=0.9,en;q=0.8",
+    "anti-content": "0aqWfq-yviPssgu2n0J3Zsggl_-ODYcmd45jQrN7CACOWpIM8oheHDp53AZJ2jJ_cnhU0hYhS1fQLpAl01vglV-ppRA5oPpAPK574SHy2NZO5GLeRkCGB17QKxWbx8RUanCiJra6KP9KTYWfd_XddU9PnclifaDOK6rL9bjDVlTyzzIJ9mMy22j8aeRKUEba9DRKFzecPgsi2JQ-WPG6lLntqXI7vsT5F_DwfnViDJa9v3kbwAL0Rike_BiVbRcN2QiZpRcOPxWa9yHHt2Sutdu9IcK2-rk4FzbDYONOutD4kRJaVYuOXtLQ7Eya2DeZWTmbAOZOP3WanTeU6Fb5OgD7KzdBtqeYnewV8zyVkHseXMXRzPXvNOeQg13rd4eS4Umznr6X7Enrk58nJPvrC32t2hB1ZiUMGLRT1uZkCth1f1ZNH1Yw6kBxtYQg4S-jP8uKUMfF1elJDMLSdxmrE6f_KDuv0z0Psto_PfNZDge_91BanvyYifZGx8K1yXu6CmwcWDB1NXR8On_KkQmbIA0JVK55ky4M0bEe7HBAVncU2YyMnWL9agCENjLosrQqCSuolCoNJ4NMRzT0ieFG-BoGKHipSihY3c4TIeQtPpPUXCsbOIeMspqZIHGxJsUj19PlVgJxJg4uLY9Ww_Csw31B16D1PbMx79Nm1nGru7zdk677TwKfFIJZ2hFkGADZWoFSfI_BXrlhUeEUKhAeFr3A8paXIs-4K_lA2gcJkTw7HOpI59geVPETEOM6u8qIeBQkghIXkyCtdEl_O1ol-E41c_gw0UzgiGmaayscZ9SOk0uJfFQgByORsRCutQOGOQqU7JfXfOyRh778ok8QEbF-9bBfJCuZkAfKGLJ4Tb4uoyydPp1-5Pn",
+    "cache-control": "no-cache",
+    "content-type": "application/json;charset=UTF-8",
+    "pragma": "no-cache",
+    "priority": "u=1, i",
+    "sec-ch-ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+    "sec-ch-ua-arch": "\"arm\"",
+    "sec-ch-ua-bitness": "\"64\"",
+    "sec-ch-ua-full-version": "\"130.0.6723.92\"",
+    "sec-ch-ua-full-version-list": "\"Chromium\";v=\"130.0.6723.92\", \"Google Chrome\";v=\"130.0.6723.92\", \"Not?A_Brand\";v=\"99.0.0.0\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-model": "\"\"",
+    "sec-ch-ua-platform": "\"macOS\"",
+    "sec-ch-ua-platform-version": "\"11.2.3\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-origin",
+    "verifyauthtoken": "6gcy_VUxWrrYNtnA3ZwLLQ79c8ec6dcdcaf429f",
+    "x-document-referer": "https://www.temu.com/us-zh-Hans/led-strip-lights-o3-2045.html?opt_level=2&title=LED%20%E6%9D%A1%E5%BD%A2%E7%81%AF%E5%B8%A6&leaf_type=bro&show_search_type=3&opt1_id=-13&refer_page_el_sn=200055&refer_page_name=bgn_verification&refer_page_id=10017_1732687497232_taf1fl4bpm&refer_page_sn=10017&filter_items=3%3A1&is_back=1&VerifyAuthToken=Yu108GDZmjf7tC8oMvsHUA3a2d2a39edc040cf2&from=https%3A%2F%2Fwww.temu.com%2Fus-zh-Hans%2Fled-strip-lights-o3-2045.html%3Fopt_level%3D2%26title%3DLED%2520%25E6%259D%25A1%25E5%25BD%25A2%25E7%2581%25AF%25E5%25B8%25A6%26leaf_type%3Dbro%26show_search_type%3D3%26opt1_id%3D-13%26refer_page_el_sn%3D200055%26refer_page_name%3Dbgn_verification%26refer_page_id%3D10017_1732672850374_ff1c6pxopc%26refer_page_sn%3D10017%26filter_items%3D3%253A1%26is_back%3D1&_x_enter_scene_type=cate_tab&_x_sessn_id=3q097897o2",
+    "x-phan-data": "0aeJx7xMxiYPiIWS7a0NzYyMzC3NTQ3MDcKBYASUsFrg",
+    "cookie": "api_uid=Cm00IWcE0ctyhQBZZhS+Ag==; region=211; currency=USD; timezone=Asia%2FShanghai; webp=1; _nano_fp=Xpmxl0XjlpgqXpTjXo__9M_1LVRgLn0dzbcQdIgu; _bee=bpo4FiPaIvwkOkhQdyYap2l3u0ZK3apg; njrpl=bpo4FiPaIvwkOkhQdyYap2l3u0ZK3apg; dilx=LiEx7Ry0nxXhodpxHebI5; hfsc=L3yIcIo24D/815DLfQ==; _ttc=3.h0oi7notmvuT.1759905178; user_uin=BA6OYF6VETPU2TMCSXXCSB5QN4BSI27N4MWTU7SQ; _u_pa=%7B%22nrpt_211%22%3A0%7D; language=zh-Hans; _hal_tag=AJvpDW2ma+egoOwaLmZeKPVoPvEirZhDpW0ZtQdiJpQn6YipHGK9Hfaj529XI5GNIA==; cf_clearance=39UsJz8JbTo8fvSgu8L2GNklvmPBI_CcB5pLYanhklk-1731236985-1.2.1.1-QYTtxUTDfz9EluhpLKBqictnmUQwKt9rrz_8WMkCDaH_THekrrsELxp0wjXZMSHXaXjUbbdCeJDPS3R.5mdeozxCw0Pgv.cjJzODkegemAhLMR5uUl.WvULr4fE7CwxWkydlkOIjezYAPkuecEgnmShie7X7FU.ovVLwuJBGyoDfFSTmCKjmUGpdFjvnIxSZeKjxP2dIzf9awoj9QJsPEpj7NlkbdIalR1qes0dwGuFwK8h74wIm3v.wswyDZXaQy0pCZRap3IKhAKQptn.wBBC2nUcI.AGybZpAfpToKt9dvc928jH_B_I8EsmUwFh9GUG4TS7bSvdmi4DlIgx0C_tGnWHeQSViFr03Csh3GJvxZRoHUT4Ic2uQ13iRBOs68NyYi_wIzjc6D8NJH2GLdHqOhkKwFVNToutqEPHsKFiPH50C58.ur9Os2lYWWdi9; AccessToken=MZSXRR63NFFDX7E4NPMLJ6HXE4WV442ZD7WWUAF6DS4YRC7DSVDQ0110d395ddc1; isLogin=1732686533417; __cf_bm=2Fty3qrVIhgstMnPfrAMVyZEufWnSE6G4Ed13LnZIcY-1732687275-1.0.1.1-5QkUF.cKVfe0jQ8rHc5fcbxAe62jWK5oz.qmeUwwTJ_uceptJUV4_tvwYcOpASpT1X_mlJhYAjkgh05nydb62w; verifyAuthToken=6gcy_VUxWrrYNtnA3ZwLLQ79c8ec6dcdcaf429f",
+    "Referer": "https://www.temu.com/us-zh-Hans/led-strip-lights-o3-2045.html?opt_level=2&title=LED%20%E6%9D%A1%E5%BD%A2%E7%81%AF%E5%B8%A6&leaf_type=bro&show_search_type=3&opt1_id=-13&refer_page_el_sn=200055&refer_page_name=bgn_verification&refer_page_id=10017_1732687497232_taf1fl4bpm&refer_page_sn=10017&filter_items=3%3A1&is_back=1&VerifyAuthToken=Yu108GDZmjf7tC8oMvsHUA3a2d2a39edc040cf2&from=https%3A%2F%2Fwww.temu.com%2Fus-zh-Hans%2Fled-strip-lights-o3-2045.html%3Fopt_level%3D2%26title%3DLED%2520%25E6%259D%25A1%25E5%25BD%25A2%25E7%2581%25AF%25E5%25B8%25A6%26leaf_type%3Dbro%26show_search_type%3D3%26opt1_id%3D-13%26refer_page_el_sn%3D200055%26refer_page_name%3Dbgn_verification%26refer_page_id%3D10017_1732672850374_ff1c6pxopc%26refer_page_sn%3D10017%26filter_items%3D3%253A1%26is_back%3D1&_x_enter_scene_type=cate_tab&_x_sessn_id=3q097897o2",
+    "Referrer-Policy": "strict-origin-when-cross-origin"
+  },
+  "body": "{\"scene\":\"opt\",\"pageSn\":10012,\"offset\":80,\"pageSize\":120,\"pagelistId\":\"31083cb754aa4255ae2d718b3c42a31d\",\"optId\":2045,\"listId\":\"category_list_8369e3cf22514cc3a3a115335eaf8645\",\"filterItems\":\"3:1\"}",
+  "method": "POST"
+});

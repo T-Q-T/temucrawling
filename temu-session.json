@@ -1,0 +1,119 @@
+{
+  "cookies": [
+    {
+      "name": "region",
+      "value": "211",
+      "domain": "www.temu.com",
+      "path": "/",
+      "expires": 1748246587.865926,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "language",
+      "value": "zh-Hans",
+      "domain": "www.temu.com",
+      "path": "/",
+      "expires": 1748246587.866786,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "currency",
+      "value": "USD",
+      "domain": "www.temu.com",
+      "path": "/",
+      "expires": 1748246587.866899,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "api_uid",
+      "value": "CmxYCGdG0jtC3gBSFBXHAg==",
+      "domain": ".temu.com",
+      "path": "/",
+      "expires": 1764230587.866945,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__cf_bm",
+      "value": "L12qWqwumTuEUY5mdgjmrTcRNf6oyV4CpbQ_7_XiXvQ-1732694588-1.0.1.1-jRESORWHyCDDNMG2EcSQfpDisgnQS9nU0ggMHkQkp7eLIMDdzEQwnaObL7E_r43BvBBwiQCdBTksLKy.7fN5nA",
+      "domain": ".temu.com",
+      "path": "/",
+      "expires": 1732696387.866997,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "timezone",
+      "value": "Asia%2FShanghai",
+      "domain": "www.temu.com",
+      "path": "/",
+      "expires": 1764230593.23493,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "webp",
+      "value": "1",
+      "domain": "www.temu.com",
+      "path": "/",
+      "expires": 1735286593.240236,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_nano_fp",
+      "value": "XpmqX5Ebn0dbXqTyl9_LSIlWxEYogbIQ8PyXd7NU",
+      "domain": "www.temu.com",
+      "path": "/",
+      "expires": 1764230593,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://www.temu.com",
+      "localStorage": [
+        {
+          "name": "i18nextLng",
+          "value": "zh-Hans"
+        },
+        {
+          "name": "layer_ack_map",
+          "value": "{\"current\":{\"10005-adg_dnld_pc_big_turntable_high_pri_wd-52-1|id:3wP1732694593-\":1732694593},\"next\":{}}"
+        },
+        {
+          "name": "search_view_storage_A10015",
+          "value": "{\"us\":[]}"
+        },
+        {
+          "name": "layout_tab",
+          "value": "[{\"page_sn\":10005,\"time\":1732694593292},null]"
+        },
+        {
+          "name": "_nano_fp",
+          "value": "XpmqX5Ebn0dbXqTyl9_LSIlWxEYogbIQ8PyXd7NU"
+        },
+        {
+          "name": "temu_monitor_build_version",
+          "value": "{\"/w/index.html\":2321025768}"
+        },
+        {
+          "name": "sc_g_n",
+          "value": "0"
+        }
+      ]
+    }
+  ]
+}
