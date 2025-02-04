@@ -91,10 +91,7 @@ fs.readFile(urlFilePath, "utf8", (err, data) => {
       title:item.title
     };
   });
-
-
-
-  debugger;
+  console.log("结果为:",JSON.stringify(result))
 });
 
 // 解析销售数字的函数
