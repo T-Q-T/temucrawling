@@ -1,11 +1,12 @@
 const { chromium } = require("playwright");
 const process = require("process");
+const { analysis } = require(".");
 
 (async () => {
   try {
     const filePath = `../page/goodList.json`;
     const pageUrl =
-        "https://www.temu.com/search_result.html?search_key=%E5%8E%A8%E6%88%BF%E7%BD%AE%E7%89%A9%E6%9E%B6&search_method=recent";
+      "https://www.temu.com/search_result.html?search_key=%E5%8E%A8%E6%88%BF%E7%BD%AE%E7%89%A9%E6%9E%B6&search_method=recent";
     // 创建数组存储商品数据
     const browser = await chromium.connectOverCDP("http://127.0.0.1:9222");
 
@@ -66,7 +67,7 @@ const process = require("process");
     // 设置更真实的 User-Agent
     await context.setExtraHTTPHeaders({
       "User-Agent":
-          "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
       "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
     });
 
@@ -81,34 +82,34 @@ const process = require("process");
     // 访问页面
     await page.goto(pageUrl);
     await page.waitForTimeout(randomDelay());
-    console.log('1');
-    await page.waitForLoadState('networkidle');
-    console.log('页面稳定了');
-    await page.locator('#splide01-slide03').click();
+    console.log("1");
+    await page.waitForLoadState("networkidle");
+    console.log("页面稳定了");
+    await page.locator("#splide01-slide03").click();
     await page.waitForTimeout(randomDelay());
 
     // 修改：目标元素的父元素原本为 display: none
     // 先将父元素的样式修改为可见，再点击目标元素
     const element = await page.$('[data-uniqid="3"]');
-    if(element) {
-      console.log(111)
+    if (element) {
+      console.log(111);
     } else {
-      console.log(222)
+      console.log(222);
     }
     if (element) {
       // 通过 evaluate 修改父元素的 display 样式为 "block"
       await page.evaluate(() => {
         const target = document.querySelector('[data-uniqid="3"]');
         if (target && target.parentElement) {
-          console.log(333)
-          target.parentElement.style.display = 'block';
+          console.log(333);
+          target.parentElement.style.display = "block";
         }
       });
       // 等待样式生效
       await page.waitForTimeout(500);
       // 点击目标元素
       await element.click();
-      console.log('点击了目标元素');
+      console.log("点击了目标元素");
     } else {
       console.error("未找到目标元素");
     }
@@ -132,10 +133,10 @@ const process = require("process");
         try {
           // 点击查看更多
           await page
-              .click("text=查看更多", { timeout: 5000 })
-              .catch(() => page.click('[aria-label*="查看更多"]'))
-              .catch(() => page.click(".load-more-button"))
-              .catch(() => page.click('button:has-text("查看更多")'));
+            .click("text=查看更多", { timeout: 5000 })
+            .catch(() => page.click('[aria-label*="查看更多"]'))
+            .catch(() => page.click(".load-more-button"))
+            .catch(() => page.click('button:has-text("查看更多")'));
 
           console.log(`第 ${i + 1} 轮：成功点击查看更多按钮`);
 
@@ -150,8 +151,8 @@ const process = require("process");
           await page.waitForTimeout(5000);
         } catch (error) {
           console.log(
-              `第 ${i + 1} 轮：点击查看更多时出错或已无更多内容:`,
-              error.message
+            `第 ${i + 1} 轮：点击查看更多时出错或已无更多内容:`,
+            error.message
           );
           break;
         }
@@ -164,19 +165,16 @@ const process = require("process");
 
     // 在所有操作完成后，可以保存数据
     const fs = require("fs");
-    fs.writeFileSync(
-        filePath,
-        JSON.stringify(allGoodsList, null, 2)
-    );
-    console.log('文件已保存');
+    // 排序商品
+    let sortAllGoodsList = analysis(allGoodsList);
+
+    fs.writeFileSync(filePath, JSON.stringify(sortAllGoodsList, null, 2));
+    console.log("文件已保存");
 
     // 监听 Ctrl+C 信号
     process.on("SIGINT", async () => {
       const fs = require("fs");
-      fs.writeFileSync(
-          filePath,
-          JSON.stringify(allGoodsList, null, 2)
-      );
+      fs.writeFileSync(filePath, JSON.stringify(sortAllGoodsList, null, 2));
       console.log("已手动中断程序，数据已保存至goodList.json");
       process.exit(0);
     });
